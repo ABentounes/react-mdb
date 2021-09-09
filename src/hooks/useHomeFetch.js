@@ -5,7 +5,7 @@ import API from '../API';
 
 const initalState = {
     page: 0,
-    result:[],
+    results:[],
     total_pages:0,
     total_results: 0
 };
