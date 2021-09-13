@@ -39,8 +39,7 @@ export const Content = styled.div`
 `;
 
 export const Text = styled.div`
-        width: 100%;
-
+    width: 100%;
     padding: 20px 40px;
     color: var(--white);
     overflow: hidden;
@@ -75,9 +74,4 @@ export const Text = styled.div`
             font-size: var(--fontBig);
         };
     };
-
-
-    @media screen and (max-width: 768px){
-        width: auto;
-    }
 `;
