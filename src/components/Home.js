@@ -19,7 +19,8 @@ import NoImage from '../images/no_image.jpg';
 
 const Home = () => {
 
-    const { state,
+    const {
+        state,
         loading,
         error,
         searchTerm,
