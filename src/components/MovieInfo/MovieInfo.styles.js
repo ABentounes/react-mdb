@@ -6,7 +6,7 @@ import { IMAGE_BASE_URL, BACKDROP_SIZE } from "../../config";
 
 export const Wrapper = styled.div`
     background: ${({ backdrop }) =>
-        backdrop ? `url('${IMAGE_BASE_URL}${BACKDROP_SIZE}${backdrop}')`
+        backdrop ? `url(${IMAGE_BASE_URL}${BACKDROP_SIZE}${backdrop})`
             : '#000'};
     background-size: cover;
     background-position: center;
@@ -40,6 +40,7 @@ export const Content = styled.div`
 
 export const Text = styled.div`
     width: 100%;
+    box-sizing: border-box;
     padding: 20px 40px;
     color: var(--white);
     overflow: hidden;
@@ -74,4 +75,21 @@ export const Text = styled.div`
             font-size: var(--fontBig);
         };
     };
+
+    .rating-directors {
+        @media screen and (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        };
+    };
+    .rating-directors>div {
+        @media screen and (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+    }
 `;
